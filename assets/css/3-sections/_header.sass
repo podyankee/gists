@@ -1,0 +1,63 @@
+.main-head
+  background-image: url("../img/bg_top.jpg")
+  background-size: cover
+  background-position: top center
+  min-height: 100vh
+
+.mnu-line
+  padding-top: 48px
+  +clearfix
+
+.logo
+  display: block
+  width: 100px
+  img
+    width: 100%
+
+nav
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+
+.main-mnu
+  text-align: center
+  font-size: em(15px)
+  > ul
+    > li
+      > a
+        display: block
+        padding: 10px 18px
+        color: #7e91a4
+        +mt(.5s)
+        &:hover
+          color: #414e5b
+      &:active
+        a
+          color: #414e5b
+          text-decoration: underline
+
+.phone
+  text-align: right
+  &-wrap
+    color: #414e5b
+    font-family: "Exo2Bold", sans-serif
+    font-size: em(22px)
+    line-height: em(15px)
+    .fa
+      font-size: em(20px)
+      position: relative
+      top: 2px
+      margin-right: 5px
+  .callback
+    color: #7e91a4
+    display: inline-block
+    font-size: em(15px)
+    line-height: em(22px)
+    border-bottom: 1px dashed #7e91a4
+    +mt(.5s)
+    &:hover
+      text-decoration: none
+      border-color: transparent
