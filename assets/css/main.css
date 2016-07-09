@@ -9,6 +9,25 @@ html {
           box-sizing: inherit;
 }
 
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, lightblue 0, lightblue 6.17215%, transparent 6.17215%, transparent 8.5298%, lightblue 8.5298%, lightblue 14.70196%, transparent 14.70196%, transparent 17.05961%, lightblue 17.05961%, lightblue 23.23176%, transparent 23.23176%, transparent 25.58941%, lightblue 25.58941%, lightblue 31.76157%, transparent 31.76157%, transparent 34.11922%, lightblue 34.11922%, lightblue 40.29137%, transparent 40.29137%, transparent 42.64902%, lightblue 42.64902%, lightblue 48.82117%, transparent 48.82117%, transparent 51.17883%, lightblue 51.17883%, lightblue 57.35098%, transparent 57.35098%, transparent 59.70863%, lightblue 59.70863%, lightblue 65.88078%, transparent 65.88078%, transparent 68.23843%, lightblue 68.23843%, lightblue 74.41059%, transparent 74.41059%, transparent 76.76824%, lightblue 76.76824%, lightblue 82.94039%, transparent 82.94039%, transparent 85.29804%, lightblue 85.29804%, lightblue 91.4702%, transparent 91.4702%, transparent 93.82785%, lightblue 93.82785%, lightblue 100%, transparent 100%);
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, transparent), color-stop(0, lightblue), color-stop(6.17215%, lightblue), color-stop(6.17215%, transparent), color-stop(8.5298%, transparent), color-stop(8.5298%, lightblue), color-stop(14.70196%, lightblue), color-stop(14.70196%, transparent), color-stop(17.05961%, transparent), color-stop(17.05961%, lightblue), color-stop(23.23176%, lightblue), color-stop(23.23176%, transparent), color-stop(25.58941%, transparent), color-stop(25.58941%, lightblue), color-stop(31.76157%, lightblue), color-stop(31.76157%, transparent), color-stop(34.11922%, transparent), color-stop(34.11922%, lightblue), color-stop(40.29137%, lightblue), color-stop(40.29137%, transparent), color-stop(42.64902%, transparent), color-stop(42.64902%, lightblue), color-stop(48.82117%, lightblue), color-stop(48.82117%, transparent), color-stop(51.17883%, transparent), color-stop(51.17883%, lightblue), color-stop(57.35098%, lightblue), color-stop(57.35098%, transparent), color-stop(59.70863%, transparent), color-stop(59.70863%, lightblue), color-stop(65.88078%, lightblue), color-stop(65.88078%, transparent), color-stop(68.23843%, transparent), color-stop(68.23843%, lightblue), color-stop(74.41059%, lightblue), color-stop(74.41059%, transparent), color-stop(76.76824%, transparent), color-stop(76.76824%, lightblue), color-stop(82.94039%, lightblue), color-stop(82.94039%, transparent), color-stop(85.29804%, transparent), color-stop(85.29804%, lightblue), color-stop(91.4702%, lightblue), color-stop(91.4702%, transparent), color-stop(93.82785%, transparent), color-stop(93.82785%, lightblue), color-stop(100%, lightblue), to(transparent));
+  background-image: -webkit-linear-gradient(right, transparent 0, lightblue 0, lightblue 6.17215%, transparent 6.17215%, transparent 8.5298%, lightblue 8.5298%, lightblue 14.70196%, transparent 14.70196%, transparent 17.05961%, lightblue 17.05961%, lightblue 23.23176%, transparent 23.23176%, transparent 25.58941%, lightblue 25.58941%, lightblue 31.76157%, transparent 31.76157%, transparent 34.11922%, lightblue 34.11922%, lightblue 40.29137%, transparent 40.29137%, transparent 42.64902%, lightblue 42.64902%, lightblue 48.82117%, transparent 48.82117%, transparent 51.17883%, lightblue 51.17883%, lightblue 57.35098%, transparent 57.35098%, transparent 59.70863%, lightblue 59.70863%, lightblue 65.88078%, transparent 65.88078%, transparent 68.23843%, lightblue 68.23843%, lightblue 74.41059%, transparent 74.41059%, transparent 76.76824%, lightblue 76.76824%, lightblue 82.94039%, transparent 82.94039%, transparent 85.29804%, lightblue 85.29804%, lightblue 91.4702%, transparent 91.4702%, transparent 93.82785%, lightblue 93.82785%, lightblue 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, lightblue 0, lightblue 6.17215%, transparent 6.17215%, transparent 8.5298%, lightblue 8.5298%, lightblue 14.70196%, transparent 14.70196%, transparent 17.05961%, lightblue 17.05961%, lightblue 23.23176%, transparent 23.23176%, transparent 25.58941%, lightblue 25.58941%, lightblue 31.76157%, transparent 31.76157%, transparent 34.11922%, lightblue 34.11922%, lightblue 40.29137%, transparent 40.29137%, transparent 42.64902%, lightblue 42.64902%, lightblue 48.82117%, transparent 48.82117%, transparent 51.17883%, lightblue 51.17883%, lightblue 57.35098%, transparent 57.35098%, transparent 59.70863%, lightblue 59.70863%, lightblue 65.88078%, transparent 65.88078%, transparent 68.23843%, lightblue 68.23843%, lightblue 74.41059%, transparent 74.41059%, transparent 76.76824%, lightblue 76.76824%, lightblue 82.94039%, transparent 82.94039%, transparent 85.29804%, lightblue 85.29804%, lightblue 91.4702%, transparent 91.4702%, transparent 93.82785%, lightblue 93.82785%, lightblue 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1170px;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3169,12 +3188,13 @@ th {
 
 body {
   max-width: 1920px;
-  width: 100%;
-  font-family: "OpenSansBold",sans-serif;
-  font-size: 14px;
-  color: #3d3d3d;
-  margin: 0;
-  padding: 0;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+  color: #222;
 }
 
 body a {
@@ -3182,10 +3202,75 @@ body a {
   font-weight: 700;
   line-height: 30px;
   text-decoration: none;
+  outline: none !important;
+  color: #ecb124;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "OpenSansLight", sans-serif;
+  font-weight: normal;
 }
 
 h1 {
   color: #000;
+  font-size: 2.5625em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3, h4 {
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 0.9375em;
+}
+
+h4 {
+  font-size: 0.8125em;
+}
+
+.ishome h1 {
+  margin-top: 0;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  background-color: #14b75a;
+  color: #fff;
+  font-size: 0.875em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 34px;
+  line-height: 1;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 4px 0 #0e9c4b;
+          box-shadow: 0 4px 0 #0e9c4b;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  outline: none;
+}
+
+.button:hover, .button:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #18cb65;
+}
+
+.button:active {
+  background-color: #0e9c4b;
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .main-head {
@@ -3193,16 +3278,34 @@ h1 {
   background-size: cover;
   background-position: top center;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+.mnu-line, .header-content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mnu-line::after, .header-content::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .mnu-line {
   padding-top: 48px;
 }
 
-.mnu-line::after {
-  clear: both;
-  content: "";
-  display: table;
+.logo-wrap {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+}
+
+.logo-wrap:last-child {
+  margin-right: 0;
 }
 
 .logo {
@@ -3214,19 +3317,28 @@ h1 {
   width: 100%;
 }
 
-nav ul {
+nav ul, .header-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav ul li {
+nav ul li, .header-content ul li {
   display: inline-block;
 }
 
 .main-mnu {
-  text-align: center;
-  font-size: 0.9375em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: -85.29804%;
+  text-align: right;
+  font-size: 0.8125em;
+}
+
+.main-mnu:last-child {
+  margin-right: 0;
 }
 
 .main-mnu > ul > li > a {
@@ -3247,18 +3359,30 @@ nav ul li {
 }
 
 .phone {
+  position: relative;
   text-align: right;
+  line-height: 1.4;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0;
+  margin-left: 68.23843%;
+}
+
+.phone:last-child {
+  margin-right: 0;
 }
 
 .phone-wrap {
   color: #414e5b;
   font-family: "Exo2Bold", sans-serif;
-  font-size: 1.375em;
+  font-size: 1.25em;
   line-height: 0.9375em;
 }
 
 .phone-wrap .fa {
-  font-size: 1.25em;
+  font-size: 1.125em;
   position: relative;
   top: 2px;
   margin-right: 5px;
@@ -3267,7 +3391,7 @@ nav ul li {
 .phone .callback {
   color: #7e91a4;
   display: inline-block;
-  font-size: 0.9375em;
+  font-size: 0.8125em;
   line-height: 1.375em;
   border-bottom: 1px dashed #7e91a4;
   -webkit-transition: all 0.5s ease;
@@ -3277,6 +3401,321 @@ nav ul li {
 .phone .callback:hover {
   text-decoration: none;
   border-color: transparent;
+}
+
+.header-content {
+  padding: 10% 0 5%;
+}
+
+.header-content i {
+  margin-right: 5px;
+}
+
+.header-content ul {
+  margin-top: 40px;
+}
+
+.header-content ul li {
+  display: block;
+  text-transform: uppercase;
+  color: #414e5b;
+  font-family: "OpenSansSemiBold", sans-serif;
+  font-size: 1.0625em;
+  line-height: 1.8;
+}
+
+.header-content .left, .header-content .right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.header-content .left:last-child, .header-content .right:last-child {
+  margin-right: 0;
+}
+
+.header-content .button {
+  margin-top: 50px;
+}
+
+.header-content .responsive-img {
+  width: 675px;
+  max-width: 675px;
+}
+
+.mouse-icon {
+  border: 2px solid #414e5b;
+  -webkit-border-radius: 16px;
+          border-radius: 16px;
+  height: 40px;
+  width: 24px;
+  display: inline-block;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.mouse-icon .wheel {
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  position: relative;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #414e5b;
+  width: 2px;
+  height: 6px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+.mw-wrapper {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.content-row {
+  display: block;
+}
+
+.content-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.toggle-mnu {
+  display: none;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+}
+
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.toggle-mnu span:after {
+  top: 18px;
+}
+
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #414e5b;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+
+.toggle-mnu.on span:before {
+  -webkit-transform: rotate(45deg) translate(-1px, 0px);
+      -ms-transform: rotate(45deg) translate(-1px, 0px);
+          transform: rotate(45deg) translate(-1px, 0px);
+}
+
+.toggle-mnu.on span:after {
+  -webkit-transform: rotate(-45deg) translate(6px, -7px);
+      -ms-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.toggle-mnu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 6px;
+}
+
+.mnu-mobile {
+  display: none;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  background-color: #414e5b;
+  margin-left: 0;
+  text-align: center;
+}
+
+.mnu-mobile li {
+  display: block;
+}
+
+.mnu-mobile > ul > li.active a {
+  text-decoration: underline;
+  color: #ecb124;
+}
+
+.mnu-mobile > ul > li > a:hover {
+  color: #fff;
+}
+
+.mnu-mobile > ul > li:hover {
+  background-color: #ecb124;
+  text-decoration: none;
+}
+
+@media (min-height: 900px) {
+  .header-content {
+    padding: 16% 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .phone {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 42.64902%;
+    margin-right: 0;
+    padding-right: 50px;
+  }
+  .phone:last-child {
+    margin-right: 0;
+  }
+  .main-mnu {
+    display: none;
+  }
+  .toggle-mnu {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-content .responsive-img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .logo-wrap {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+  }
+  .logo-wrap:last-child {
+    margin-right: 0;
+  }
+  .ishome h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .phone:last-child {
+    margin-right: 0;
+  }
+  .logo-wrap {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .logo-wrap:last-child {
+    margin-right: 0;
+  }
+  .mnu-line {
+    text-align: center;
+  }
+  .mnu-line .logo {
+    display: inline-block;
+  }
+  .mnu-line .phone {
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .mnu-line .toggle-mnu {
+    top: -70px;
+  }
+  .content-row .left {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content-row .right {
+    display: none;
+  }
+  .header-content ul li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .ishome h1 {
+    margin-top: 30px;
+  }
+  .mnu-mobile {
+    font-size: 0.9375em;
+    text-transform: uppercase;
+  }
 }
 
 /*# sourceMappingURL=../maps/main.css.map */

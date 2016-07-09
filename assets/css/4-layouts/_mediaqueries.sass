@@ -1,5 +1,65 @@
-//@media (min-width: 767px)
-	
-//@media (max-width: 640px)
-//@media (max-width: 640px)
-	
+@media (min-height: 900px)
+	.header-content
+		padding: 16% 0
+
+
+
+@media (max-width: 1024px)
+	.phone
+		+span-columns(6)
+		+shift(5)
+		+omega
+		padding-right: 50px
+	.main-mnu
+		display: none
+	.toggle-mnu
+		display: block
+
+@media (max-width: 1200px)
+	.header-content
+		.responsive-img
+	    width: auto
+	    max-width: 100%
+
+
+@media (max-width: 810px)
+	.logo-wrap
+		+span-columns(6)
+		+omega
+	.ishome
+		h1
+			font-size: em(32px)
+
+@media (max-width: 768px)
+	.phone
+		+span-columns(12)
+		+shift(0)
+	.logo-wrap
+		+span-columns(12)
+	.mnu-line
+		text-align: center
+		.logo
+			display: inline-block
+		.phone
+			text-align: center
+			padding: 0
+			margin-top: 25px
+		.toggle-mnu
+			top: -70px
+	.content-row
+		.left
+			float: none
+			width: 90%
+			margin: 0 auto
+		.right
+			display: none
+	.header-content ul li
+		font-size: em(16px)
+
+@media (max-width: 480px)
+	.ishome h1
+		margin-top: 30px
+
+	.mnu-mobile
+		font-size: em(15px)
+		text-transform: uppercase

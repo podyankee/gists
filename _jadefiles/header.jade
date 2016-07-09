@@ -1,26 +1,58 @@
 header.main-head
-  .container
-    .row
-      .mnu-line
-        .col-md-2
-          a.logo(href="#")
-            img(src="assets/img/logo.svg", alt="OVK STROY")
-        .col-md-3.col-md-push-7
-          .phone
-            .phone-wrap
-              i.fa.fa-mobile 
-              |+7(495) 99-99-999
-            a.callback(href="#!") Заказать обратный звонок
-        .col-md-7.col-md-pull-3
-          nav.main-mnu
-            ul
-              li.active
-                a(href="#!") Главная
-              li
-                a(href="#!") Монтаж
-              li
-                a(href="#!") Проектирование
-              li
-                a(href="#!") Оборудование
-              li
-                a(href="#!") Контакты
+  .mnu-line
+    .logo-wrap
+      a.logo(href="#")
+        img(src="assets/img/logo.svg", alt="OVK STROY")
+    .phone
+      .phone-wrap
+        i.fa.fa-mobile 
+        |+7(495) 99-99-999
+      a.callback(href="#!") Заказать обратный звонок
+      a.toggle-mnu
+        span
+    nav.main-mnu
+      ul
+        li.active
+          a(href="#!") Главная
+        li
+          a(href="#!") Монтаж
+        li
+          a(href="#!") Проектирование
+        li
+          a(href="#!") Оборудование
+        li
+          a(href="#!") Контакты
+    nav.main-mnu.mnu-mobile
+      ul
+        li.active
+          a(href="#!") Главная
+        li
+          a(href="#!") Монтаж
+        li
+          a(href="#!") Проектирование
+        li
+          a(href="#!") Оборудование
+        li
+          a(href="#!") Контакты
+  .header-content
+    .content-row
+      .left
+        h1 Монтаж систем вентиляции и кондиционирования
+        ul
+          li
+            i.fa.fa-check
+            | Работаем без предоплаты
+          li
+            i.fa.fa-check
+            | Скидки до 40%
+          li
+            i.fa.fa-check
+            | Бесплатный выезд инженера
+        a.button(href="#!") Отправить заявку
+      .right
+        .top-img-wrap
+          img.responsive-img(src="assets/img/header_img.png", alt="ОВК Строй")
+    .mw-wrapper
+      .mouse-icon
+        .wheel
+      

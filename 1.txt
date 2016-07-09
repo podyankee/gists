@@ -35,3 +35,9 @@ bower uninstall jquery -S
 {% include section-contact.html %}
 {% include section-map.html %}
 {% include footer.html %}
+
+
+.responsive-img
+  max-width: 100%
+
+OVK - mobile menu
