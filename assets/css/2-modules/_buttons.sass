@@ -3,7 +3,7 @@
   border: none
   background-color: $btn
   color: #fff
-  font-size: em(14px)
+  font-size: em(13px)
   letter-spacing: 2px
   text-transform: uppercase
   padding: 13px 34px
@@ -12,6 +12,7 @@
   box-shadow: 0 4px 0 #0e9c4b
   transition: all .15s ease
   outline: none
+  text-align: center
   &:hover, &:focus
     color: #fff
     text-decoration: none
@@ -20,3 +21,21 @@
   &:active
     background-color: #0e9c4b
     transform: translateY(2px)
+
+.button-accent
+  background-color: transparent
+  border: 1px solid $accent
+  box-shadow: 0px 4px 0px darken($accent, 6%)
+  outline: 0
+  padding: 13px 30px
+  color: $accent
+  font-family: "OpenSansSemiBold", sans-serif
+  &:visited
+    background-color: transparent
+    color: $accent
+  &:hover
+    background-color: $accent
+    color: #fff
+  &:active, &:focus
+    background-color: darken($accent, 6%)
+    color: #fff

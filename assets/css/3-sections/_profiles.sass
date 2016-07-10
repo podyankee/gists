@@ -1,0 +1,65 @@
+.profiles-gallery, .profiles-features
+  +span-columns(6)
+  h2
+    text-transform: none
+    margin-top: 0
+    line-height: em(14px)
+
+.gallery-tizer-wrap
+  min-height: 360px
+  border: 7px solid $accent
+  background-size: cover
+  position: relative
+  display: block
+  &:hover
+    text-decoration: none
+    &::before
+      opacity: .8
+  &::before
+    content: ''
+    +size(100%)
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #414e5b
+    opacity: .6
+    +mt(.25s)
+  .table
+    position: relative
+    z-index: 2
+    text-align: center
+    height: 360px
+    span
+      font-size: em(26px)
+      color: #fff
+      font-family: "OpenSansLight", sans-serif
+      i
+        color: #b5bdc6
+        font-size: 58px
+
+
+.tizer-triangle
+  position: absolute
+  top: 0
+  right: 0
+  color: #fff
+  font-size: 19px
+  +triangle(65px, $accent, up-right)
+  i
+    position: absolute
+    top: -60px
+    right: 6px
+
+.s-profile
+  .fa-plus
+    color: #b1b8be
+
+
+
+.profiles-features
+  .button
+    +span-columns(3 of 6)
+    margin-top: 46px
+  p
+    margin-bottom: 40px
+    color: #777

@@ -20,6 +20,24 @@
 		.responsive-img
 	    width: auto
 	    max-width: 100%
+	.profiles-features
+		.button-accent
+			span
+				display: none
+
+
+@media (max-width: 990px)
+	.advantage
+		+span-columns(6)
+		+omega
+	.profiles-features
+		.button
+			+span-columns(4 of 6)
+		.button-accent
+			margin-top: 20px
+			padding: 13px 30px
+			span
+				display: inline-block
 
 
 @media (max-width: 810px)
@@ -56,6 +74,20 @@
 	.header-content ul li
 		font-size: em(16px)
 
+	.advantage
+		+span-columns(12)
+	.profiles-gallery, .profiles-features
+	  +span-columns(12)
+
+	.profiles-features
+		h2
+			margin-top: 20px
+		.button
+			width: 100%
+	.profiles-gallery, .profiles-features
+		padding: 0 20px
+
+
 @media (max-width: 480px)
 	.ishome h1
 		margin-top: 30px
@@ -63,3 +95,10 @@
 	.mnu-mobile
 		font-size: em(15px)
 		text-transform: uppercase
+
+	.header-content
+		text-align: center
+
+	.ishome
+		h2
+			font-size: 28px
