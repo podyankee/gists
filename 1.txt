@@ -40,4 +40,4 @@ bower uninstall jquery -S
 .responsive-img
   max-width: 100%
 
-OVK - mobile menu
+OVK - mobile menu, magnific-popup
