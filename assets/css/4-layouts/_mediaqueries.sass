@@ -3,6 +3,9 @@
 		padding: 16% 0
 
 
+@media (min-width: 1025px)
+	.mnu-mobile
+		display: none!important
 
 @media (max-width: 1024px)
 	.phone
@@ -38,6 +41,10 @@
 			padding: 13px 30px
 			span
 				display: inline-block
+	.item-vertical
+		.button
+			span
+				display: none
 
 
 @media (max-width: 810px)
@@ -74,10 +81,8 @@
 	.header-content ul li
 		font-size: em(16px)
 
-	.advantage
+	.advantage,.profiles-gallery, .profiles-features
 		+span-columns(12)
-	.profiles-gallery, .profiles-features
-	  +span-columns(12)
 
 	.profiles-features
 		h2
@@ -86,6 +91,11 @@
 			width: 100%
 	.profiles-gallery, .profiles-features
 		padding: 0 20px
+	.directions-wrap
+		.item-vertical
+			+span-columns(12)
+			span
+				display: inline-block
 
 
 @media (max-width: 480px)

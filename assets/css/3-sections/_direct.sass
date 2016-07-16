@@ -1,0 +1,42 @@
+.directions-wrap
+  .item-vertical
+    +span-columns(4)
+
+.item-vertical
+  margin-top: 80px
+  text-align: center
+  path
+    fill: #555!important
+    +mt(.5s)
+  &:hover
+    path
+      fill: $accent!important
+    h3
+      &::before
+        background-color: $accent
+        width: 30%
+        margin-left: -15%
+  svg
+    width: 74px
+    height: auto
+
+  h3
+    margin-top: 30px
+    position: relative
+    padding-bottom: 15px
+    &::before
+      content: ''
+      height: 1px
+      width: 15%
+      background-color: #d0d0d0
+      position: absolute
+      bottom: 0
+      left: 50%
+      margin-left: -7.5%
+      +mt(.5s)
+  p
+    font-size: em(14px)
+    color: #666
+    padding: 0 10px
+    margin-top: 25px
+    margin-bottom: 35px
