@@ -1,0 +1,101 @@
+.portfolio
+  +clearfix
+  .portfolio-item
+    +span-columns(3)
+    +omega()
+    width: 25%
+    position: relative
+    display: block
+    color: #414e5b
+    overflow: hidden
+    line-height: 0
+    img
+      +mt(.5s)
+    &:hover
+      .portfolio-item-content
+        opacity: 1
+        transform: scale(.9)
+      img
+        transform: scale(1)
+
+    &-content
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      padding-top: 25%
+      background-color: rgba(255, 255, 255, .85)
+      text-align: center
+      opacity: 0
+      +mt(.5s)
+      transform: scale(1.2)
+      i
+        color: rgba(65, 78, 91, .6)
+        font-size: 24px
+    h3
+      line-height: 1.4
+
+.s-works
+  padding-bottom: 0
+  border-bottom: 20px solid #35414e
+  h2
+    margin-bottom: 64px
+
+.portfolio-popup
+  display: block
+  position: relative
+  background-color: #fff
+  max-width: 1000px
+  margin: 5% auto
+  text-align: center
+  +mt(.25s)
+  padding-top: 15px
+  h2
+    line-height: em(21px)
+    margin: 30px auto
+    text-transform: none
+    width: 70%
+  img
+    padding-top: 5%
+
+.my-mfp-zoom-in
+	.portfolio-popup
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+
+	&.mfp-ready .portfolio-popup
+		opacity: 1
+		transform: scale(1)
+
+	&.mfp-removing .portfolio-popup
+		opacity: 0
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: opcity 0.3s ease-out
+	&.mfp-ready.mfp-bg
+		opacity: 0.8
+	&.mfp-removing.mfp-bg
+		opacity: 0
+
+.portfolio-popup-text
+  +clearfix
+  display: block
+  text-align: left
+  width: 90%
+  margin: 20px auto 40px
+  padding-bottom: 40px
+  .left, .right
+    +span-columns(6)
+  .td
+    vertical-align: top
+    padding: 0 7px
+    color: #666
+    &.wsnw
+      color: $accent
+    strong
+      margin-left: 5px
+    i
+      font-size: 22px

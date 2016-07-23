@@ -27,7 +27,11 @@
 		.button-accent
 			span
 				display: none
-
+	.portfolio
+		.portfolio-item
+			+span-columns(4)
+			+omega
+			width: 33.333333%
 
 @media (max-width: 990px)
 	.advantage
@@ -45,6 +49,11 @@
 		.button
 			span
 				display: none
+	.portfolio
+		.portfolio-item
+			+span-columns(6)
+			+omega
+			width: 50%
 
 
 @media (max-width: 810px)
@@ -97,6 +106,25 @@
 			span
 				display: inline-block
 
+	.portfolio
+		.portfolio-item
+			+span-columns(12)
+			+omega
+			float: none
+			width: auto
+
+	.portfolio-popup-text
+		.left, .right
+			float: none
+			width: auto
+
+	.portfolio-popup
+		.td
+			padding-bottom: 15px
+		h2
+			width: 90%
+
+
 
 @media (max-width: 480px)
 	.ishome h1
@@ -112,3 +140,7 @@
 	.ishome
 		h2
 			font-size: 28px
+	.portfolio-popup
+		.td
+			font-size: 12px
+			padding-left: 0

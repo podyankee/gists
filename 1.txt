@@ -42,3 +42,5 @@ bower uninstall jquery -S
 
 OVK - mobile menu, magnific-popup, animate-number,animate-count, work with svg,
   h3 horizontal underline
+
+make one column responsive - float none; width: auto;margin-bottom: 10px;

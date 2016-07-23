@@ -1,3 +1,4 @@
+
 var gulp        = require('gulp'),
  browserSync = require('browser-sync'),
  sass        = require('gulp-sass'),
@@ -30,7 +31,8 @@ sassSources = ['assets/css/'];
 jadeSources = ['_jadefiles/*.jade'];
 imgSources = ['assets/img/**/*.*'];
 jsSources  = ['assets/libs/jquery/dist/jquery.min.js','assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-'assets/libs/waypoints/lib/jquery.waypoints.min.js','assets/libs/jquery-animateNumber/jquery.animateNumber.min.js'];
+'assets/libs/waypoints/lib/jquery.waypoints.min.js','assets/libs/jquery-animateNumber/jquery.animateNumber.min.js',
+'assets/libs/jQuery.equalHeights/jquery.equalheights.min.js'];
 
 
 if (env==='development')
@@ -110,7 +112,7 @@ gulp.task('jade', function  () {
  * Compile files from _scss into both dist/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-	return gulp.src(sassSources+"*.scss")
+	return gulp.src([sassSources+"*.scss",sassSources+'**/*.sass'])
 		.pipe(customPlumber('Error Running Sass'))
 		.pipe(sourcemaps.init())
 		.pipe(sass({
