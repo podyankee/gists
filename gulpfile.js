@@ -30,9 +30,9 @@ env = process.env.NODE_ENV || 'development';
 sassSources = ['assets/css/'];
 jadeSources = ['_jadefiles/*.jade'];
 imgSources = ['assets/img/**/*.*'];
-jsSources  = ['assets/libs/jquery/dist/jquery.min.js','assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+jsSources  = ['assets/libs/jquery/dist/jquery-2.2.4.min.js','assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 'assets/libs/waypoints/lib/jquery.waypoints.min.js','assets/libs/jquery-animateNumber/jquery.animateNumber.min.js',
-'assets/libs/jQuery.equalHeights/jquery.equalheights.min.js'];
+'assets/libs/jQuery.equalHeights/jquery.equalheights.min.js', 'assets/libs/owl.carousel/dist/owl.carousel.min.js'];
 
 
 if (env==='development')

@@ -44,3 +44,8 @@ OVK - mobile menu, magnific-popup, animate-number,animate-count, work with svg,
   h3 horizontal underline
 
 make one column responsive - float none; width: auto;margin-bottom: 10px;
+
+
+*transition: filter .25s ease
+.mfp-wrap ~ *
+  filter: blur(5px) размытие заднего фона в popuo
