@@ -5215,6 +5215,82 @@ nav ul li, .header-content ul li {
   background-color: #ecb124;
 }
 
+.s-brands {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+.s-brands::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.s-brands h2 {
+  margin-bottom: 60px;
+  padding: 60px 0;
+}
+
+.carousel-brands {
+  padding: 0 80px;
+  position: relative;
+}
+
+.carousel-brands .owl-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-brands .owl-controls .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.carousel-brands .owl-controls .owl-nav > div {
+  position: absolute;
+  left: 25px;
+  color: #9c9c9c;
+  -webkit-transition: all, .5s, ease;
+  transition: all, .5s, ease;
+  font-size: 34px;
+  line-height: 38px;
+}
+
+.carousel-brands .owl-controls .owl-nav > div:hover {
+  color: #ecb124;
+}
+
+.carousel-brands .owl-controls .owl-nav > div.owl-next {
+  right: 25px;
+  left: auto;
+}
+
+.carousel-brands .carousel-brand {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: .5;
+}
+
+.carousel-brands .carousel-brand:hover {
+  opacity: .9;
+}
+
+.carousel-brands .carousel-brand a {
+  display: block;
+  text-align: center;
+}
+
+.carousel-brands .carousel-brand a img {
+  max-width: 70%;
+  max-height: 40px;
+  display: inline-block;
+}
+
 @media (min-height: 900px) {
   .header-content {
     padding: 16% 0;
@@ -5428,6 +5504,15 @@ nav ul li, .header-content ul li {
 }
 
 @media (max-width: 480px) {
+  .carousel-brands {
+    padding: 0 40px;
+  }
+  .carousel-brands .owl-controls .owl-nav > div {
+    left: 15px;
+  }
+  .carousel-brands .owl-controls .owl-nav > div.owl-next {
+    right: 15px;
+  }
   .ishome h1 {
     margin-top: 30px;
   }
