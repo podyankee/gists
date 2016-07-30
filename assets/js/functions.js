@@ -53,9 +53,18 @@ $(document).ready(function(){
         }
     }
   });
+  function heightses(){
+    $(".s-direct .item-vertical p").height("auto").equalHeights();
+    $(".carousel-text").height("auto").equalHeights();
+    $(".testimonials-head").height("auto").equalHeights();
+    $(".testimonials-description").height("auto").equalHeights();
+  }
 
-  $(".s-direct .item-vertical p").equalHeights();
-  $(".carousel-text").equalHeights();
+  $(window).resize(function(){
+    heightses();
+  });
+
+  heightses();
 
   $(".portfolio-item").each(function(e){
     var th = $(this);
