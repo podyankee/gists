@@ -73,11 +73,20 @@ $(document).ready(function(){
       .attr("id", "portfolio-img-" + e);
   });
 
-  $(".portfolio-item").magnificPopup({
+  $(".portfolio-item,a[href='#callback']").magnificPopup({
     mainClass: 'mfp-zoom-in',
     removalDelay: 300,
     type: 'inline'
   });
+
+  $("a[href='#callback']").click(function(){
+    var dataForm = $(this).data("form");
+    var dataText = $(this).data("text");
+    $(".form-callback h4").text(dataText);
+    $(".form-callback [name=admin-data]").val(dataForm);
+  });
+
+  $("body").append('<div class="top"><i class="fa fa-angle-double-up">');
 
   $('.mfp-gallery').each(function() {
     $(this).magnificPopup({
@@ -150,8 +159,15 @@ $(".advantage h3 span").each(function() {
 
   $(".toggle-mnu").click(function() {
     $(this).toggleClass("on");
-    $(".mnu-mobile").slideToggle();
+    $(this).parent().next().next().slideToggle();
     return false;
+  });
+  $(".main-foot .toggle-mnu").click(function() {
+    $("html,body").animate({scrollTop: $(document).height() + 200}, "slow");
+    return false;
+  });
+  $("body").on("click", ".top", function() {
+    $("html,body").animate({scrollTop: 0}, "slow");
   });
 
 
@@ -192,5 +208,12 @@ $(".advantage h3 span").each(function() {
 
   	});
 
+  $(window).scroll(function(){
+    if($(this).scrollTop() > $(this).height()){
+      $(".top").addClass("active");
+    } else {
+      $(".top").removeClass("active");
+    }
+  });
 
 });

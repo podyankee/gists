@@ -1,0 +1,52 @@
+footer.main-foot
+  .mnu-line
+    .logo-wrap
+      a.logo(href="#")
+        img(src="assets/img/logo-white.svg", alt="OVK STROY")
+    .phone
+      .phone-wrap
+        i.fa.fa-mobile 
+        |+7(495) 99-99-999
+      a.callback(href="#callback",data-form="Заказать обратный звонок: Футер", data-text="Заказать звонок") Заказать обратный звонок
+      a.toggle-mnu
+        span
+    nav.main-mnu
+      ul
+        li.active
+          a(href="#!") Главная
+        li
+          a(href="#!") Монтаж
+        li
+          a(href="#!") Проектирование
+        li
+          a(href="#!") Оборудование
+        li
+          a(href="#!") Контакты
+    nav.main-mnu.mnu-mobile
+      ul
+        li.active
+          a(href="#!") Главная
+        li
+          a(href="#!") Монтаж
+        li
+          a(href="#!") Проектирование
+        li
+          a(href="#!") Оборудование
+        li
+          a(href="#!") Контакты
+.hidden
+  form#callback.contact-form.form-callback
+    input(type="hidden", name="admin-data")
+    .contact-form-head
+      h4 Оставить заявку
+      p Оставьте заявку и мы свяжемся с вами в течении 20 минут
+    label
+      #[span Ваше имя:]
+      input(type="text", name="Имя",placeholder="Ваше имя...")
+    label
+      #[span Ваш телефон:]
+      input(type="text", name="Телефон",placeholder="Ваш телефон...", required)
+    
+    .text-center
+      button.button.button-small Отправить
+      
